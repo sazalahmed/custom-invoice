@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Custom Invoice</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container">
+        <div class="invoice_area">
+            <h3 class="title">COMMERCIAL INVOICE</h3>
+            <div class="invoice_content">
+                <table class="main_table">
+
+                    <tr>
+                        <td class="data_devider padding">
+                            <label for="#">Exporter</label>
+                            <select class="w-75 mb-3 me-3">
+                                <option>MSM ICT Ltd</option>
+                                <option>Select..</option>
+                            </select>
+
+                            <a class="edit_btn mb-2 mt-2" href="#" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Create New</a>
+
+
+                            <p>MSM ICT Ltd</p>
+                            <p>Bangladesh</p>
+                            <p>Dhaka, 1230</p>
+                            <p>01977733433</p>
+                            <p>Shalam Uddin</p>
+
+                        </td>
+                        <td class="data_devider">
+                            <p class="d-block text-end padding">Pages <br> 1 of 1</p>
+                            <table class="inner_table">
+                                <tr>
+                                    <td class="padding">
+                                        <label for="#">Invoice Number & Date</label>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input class="date" type="date">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Bill of Lading Number</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="padding">
+                                        <label for="#">Reference</label>
+                                        <input type="text">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Buyer Reference</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="data_devider padding pb-5">
+                            <label for="#">Consignee</label>
+                            <select>
+                                <option>Select..</option>
+                                <option>demo 1</option>
+                                <option>demo 2</option>
+                                <option>demo 3</option>
+                                <option>demo 4</option>
+                                <option>demo 5</option>
+                            </select>
+                        </td>
+                        <td class="data_devider padding pb-5">
+                            <label for="#">Buyer (If not Consignee)</label>
+                            <select>
+                                <option>Select..</option>
+                                <option>demo 1</option>
+                                <option>demo 2</option>
+                                <option>demo 3</option>
+                                <option>demo 4</option>
+                                <option>demo 5</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding">
+                                        <label for="#">Method of Dispatch</label>
+                                        <input type="text">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Type of Shipment</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding">
+                                        <label for="#">Country Of Origin of Goods</label>
+                                        <input type="text">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Country of Final Destination</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0	">
+                                    <td class="padding">
+                                        <label for="#">Vessel / Aircraft</label>
+                                        <input type="text">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Voyage No</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="padding">
+                                        <label for="#">Port of Loading</label>
+                                        <select>
+                                            <option>Select..</option>
+                                            <option>demo 1</option>
+                                            <option>demo 2</option>
+                                            <option>demo 3</option>
+                                            <option>demo 4</option>
+                                            <option>demo 5</option>
+                                        </select>
+                                    </td>
+                                    <td class="padding border-0">
+                                        <label for="#">Date of Departure</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding border-0">
+                                        <label for="#">Terms / Method of Payment</label>
+                                        <textarea class="payment_input" rows="4"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <table class="main_table main_table_2">
+                    <tbody>
+
+                        <tr class="border-0">
+                            <td>
+                                <p>Product Code</p>
+                            </td>
+                            <td>
+                                <p>Description of Goods</p>
+                            </td>
+                            <td>
+                                <p>HS Code</p>
+                            </td>
+                            <td>
+                                <p>Unit Quantity</p>
+                            </td>
+                            <td>
+                                <p>Unit Type</p>
+                            </td>
+                            <td>
+                                <p>Price</p>
+                            </td>
+                            <td>
+                                <p>Amount</p>
+                            </td>
+                        </tr>
+                        <div>
+                            <tr class="dymanic_row">
+                                <!-- <a href="#" class="delete_row"><i class="fal fa-trash"></i></a> -->
+                                <td class="border-0">
+                                    <select>
+                                        <option>Select..</option>
+                                        <option>List 1</option>
+                                        <option>List 2</option>
+                                        <option>List 3</option>
+                                        <option>List 4</option>
+                                        <option>List 5</option>
+                                    </select>
+                                </td>
+                                <td class="border-0">
+                                    <input type="text">
+                                </td>
+                                <td class="border-0">
+                                    <input type="text">
+                                </td>
+                                <td class="border-0">
+                                    <input type="text" placeholder="0">
+                                </td>
+                                <td class="border-0">
+                                    <input type="text" placeholder="0">
+                                </td>
+                                <td class="border-0">
+                                    <input type="text" placeholder="0">
+                                </td>
+                                <td class="border-0">
+                                    <input type="text" placeholder="00">
+                                </td>
+                            </tr>
+                        </div>
+                        <tr class="border-0">
+                            <td class="border-0 w-100">
+                                <a href="#">add new line</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table class="main_table border-top-0">
+
+                    <tr class="border-0">
+                        <td class="data_devider border-0">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding border-0">
+                                        <p class="text-end">Consignment Total</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0	">
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="0">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="00">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding border-0">
+                                        <label>Additional Information</label>
+                                        <textarea rows="5"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0	">
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="Add discounts">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="00">
+                                    </td>
+                                    <table class="w-100">
+                                        <tr class="border-0">
+                                            <td class="padding border-0 w-100">
+                                                <a class="mb-0" href="#">add new line</a>
+                                                <a class="mb-0" href="#">% Add taxes</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="w-100">
+                                        <tr>
+                                            <td class="padding border-0">
+                                                <label class="m-0">Invoice Total (Incoterms® 2020)</label>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-0 d-flex flex-wrap">
+                                            <td class="padding w-25 border-0 pt-0">
+                                                <input type="text" placeholder="00">
+                                            </td>
+                                            <td class="padding w-25 border-0 pt-0">
+                                                <input type="text" placeholder="00">
+                                            </td>
+                                            <td class="padding w-25 border-0 pt-0">
+                                                <input type="text" placeholder="00">
+                                            </td>
+                                            <td class="padding w-25 border-0 pt-0">
+                                                <input type="text" placeholder="00">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <table class="main_table border-top-0">
+
+                    <tr class="border-0">
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr class="border-0">
+                                    <td class="padding border-0">
+                                        <label>Bank Details</label>
+                                        <textarea rows="18"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="data_devider">
+                            <table class="inner_table">
+                                <tr>
+                                    <td class="padding pb-0 border-0">
+                                        <label class="m-0">Place and Date of Issue</label>
+                                    </td>
+                                </tr>
+                                <tr class="border-0	">
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="inner_table">
+                                <tr>
+                                    <td class="padding pb-0 border-0">
+                                        <label class="m-0">Signatory Company </label>
+                                    </td>
+                                </tr>
+                                <tr class="border-0	">
+                                    <td class="padding border-0 w-100">
+                                        <input type="text" placeholder="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="inner_table">
+                                <tr>
+                                    <td class="padding pb-0 border-0">
+                                        <label class="m-0">Name of Authorized Signatory</label>
+                                    </td>
+                                </tr>
+                                <tr class="border-0	">
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="">
+                                    </td>
+                                    <td class="padding border-0">
+                                        <input type="text" placeholder="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="inner_table">
+                                <tr>
+                                    <td class="padding pb-0 border-0">
+                                        <label class="m-0">Signature</label>
+                                    </td>
+                                </tr>
+                                <tr class="border-0	">
+                                    <td class="padding border-0 w-100">
+                                        <textarea rows="7"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="invoice_modal">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row align-items-center">
+                                <div class="col-xl-6">
+                                    <p>Company Name</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>logo</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <h3>Primary Contacy</h3>
+                            <div class="row align-items-center">
+                                <div class="col-xl-6">
+                                    <p>First Name</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>Last Name</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>email</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="email">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>phone</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <h3>Street Address</h3>
+                            <div class="row align-items-center">
+                                <div class="col-xl-6">
+                                    <p>Address</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>City</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>State/Territory</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="email">
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>Country</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <select>
+                                        <option>Select..</option>
+                                        <option>Japan</option>
+                                        <option>Korea</option>
+                                        <option>Thailand</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6">
+                                    <p>ZIP Code</p>
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

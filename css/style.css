@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 22px;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    background: #F5F6F8;
+}
+
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px 20px;
+    outline: none;
+    resize: none;
+    border: none;
+    background: #f5f6f8;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    /* max-width: 1040px; */
+}
+
+/* :root {
+    --colorPrimary: #292B75;
+    --paraColor: #5A5A5A;
+    --colorBlack: #121212;
+    --colorWhite: #ffffff;
+    --paraFont: 'Roboto', sans-serif;
+    --headingFont: 'Source Sans Pro', sans-serif;
+} */
+
+/* #e1e4ea */
+
+
+.invoice_area {
+    padding: 50px;
+    margin: 50px auto;
+    border: 1px solid rgba(3, 27, 78, .2);
+    box-shadow: 0 10px 4px rgba(3, 27, 78, .2);
+    background: #fff;
+}
+
+.invoice_area .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.invoice_area .main_table {
+    border: 1px solid #e1e4ea;
+    width: 100%;
+}
+
+.invoice_area table {
+    margin: 0;
+}
+
+.invoice_area .inner_table {
+    width: 100%;
+}
+
+.invoice_area table tr {
+    border-top: 1px solid #e1e4ea;
+}
+
+.invoice_area table tr .data_devider {
+    position: relative;
+}
+
+.invoice_area table tr .data_devider .edit_btn {
+    position: absolute;
+    top: 28px;
+    right: 2px;
+    padding: 7px 15px;
+}
+
+.invoice_area table tr th,
+.invoice_area table tr td {
+    border-right: 1px solid #e1e4ea;
+    width: 50%;
+    vertical-align: baseline;
+}
+
+.invoice_area table tr td label {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.padding {
+    padding: .4rem;
+}
+
+.invoice_area table tr td input,
+.invoice_area table tr td textarea {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.invoice_area table tr td input.date {
+    text-transform: uppercase;
+}
+
+.payment_input {
+    height: 100%;
+}
+
+.main_table_2 {
+    border-top: 0 !important;
+}
+
+.main_table_2 tr th,
+.main_table_2 tr td {
+    width: 14% !important;
+    padding: .4rem;
+}
+
+.main_table select {
+    background: #f5f6f8;
+    width: 100%;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.8em top 50%, 0 0;
+    background-size: .60em auto, 100%;
+}
+
+.main_table a {
+    background: rgba(51, 112, 235, .07);
+    color: #3370eb;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 4px 15px;
+    border-radius: 6px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-bottom: 70px;
+    margin-right: 5px;
+}
+
+.main_table a:hover {
+    color: #fff;
+    background: #3370eb;
+}
+
+.invoice_modal .modal-dialog {
+    max-width: 800px;
+}
+
+.invoice_modal .modal-title {
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.invoice_modal .modal-body p {
+    text-align: right;
+}
+
+.invoice_modal .modal-body input {
+    margin: 5px 0px;
+}
+
+.invoice_modal .modal-body select {
+    background: #f5f6f8;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    margin: 5px 0px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.8em top 50%, 0 0;
+    background-size: .60em auto, 100%;
+}
+
+.invoice_modal .modal-body h3 {
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dymanic_row {
+    position: relative;
+}
+
+.delete_row {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
